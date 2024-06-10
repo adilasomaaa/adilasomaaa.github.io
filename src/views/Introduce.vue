@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col justify-center items-center sm:h-screen">
+    <div class="flex flex-col justify-center items-center sm:h-screen md:h-auto">
       <div class="w-fit sm:px-[10rem] px-5">
-        <div class="grid sm:grid-cols-4 grid-cols-1 gap-5 ">
+        <div class="grid sm:grid-cols-4 grid-cols-1 md:grid-cols-1 gap-5 ">
             <div class="profil flex flex-col justify-center">
                 <img src="/profil2.png" width="100%" alt="" data-aos="fade-right" data-aos-duration="1500">
                 <div class=" flex justify-center" data-aos="fade-up" data-aos-duration="1500">
