@@ -10,7 +10,7 @@
             </h3>
         </div>
         <div class="grid sm:grid-cols-3 grid-cols-1 gap-10 my-10"  data-aos="zoom-in" data-aos-duration="1500">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg" v-for="item in projects" :key="item">
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white" v-for="item in projects" :key="item">
                 <div class="w-full h-11 rounded-t-lg bg-[#e5e7eb] flex justify-start items-center space-x-1.5 px-3">
                     <span class="w-3 h-3 rounded-full bg-[#f87171]"></span>
                     <span class="w-3 h-3 rounded-full bg-[#facc15]"></span>

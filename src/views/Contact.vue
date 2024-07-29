@@ -9,8 +9,8 @@
                 Let's <b>collaborate</b> to create something amazing together! Feel free to reach out to me through my <b>social media</b>:
             </h3>
         </div>
-        <div class="grid sm:grid-cols-4 grid-cols-1 gap-5 my-10" data-aos="fade-up" data-aos-duration="1500">
-            <a :href="item.link" class="item flex justify-center text-center items-center mb-5 bg-secondary p-3 rounded-lg text-white hover:bg-primary text-center" v-for="item in contacts" :key="item.id">
+        <div class="grid sm:grid-cols-2 grid-cols-1 gap-5 my-10" data-aos="fade-up" data-aos-duration="1500">
+            <a :href="item.link" class="item flex justify-center text-center items-center bg-secondary p-3 rounded-lg text-white hover:bg-primary text-center" v-for="item in contacts" :key="item.id">
                 <font-awesome-icon :icon="item.icon" size="xl" />
                 <h4 class="text-xl uppercase font-bold ml-3">{{ item.name }}</h4>
             </a>
@@ -37,7 +37,7 @@ export default {
                     {
                         name:'Github',
                         icon:'fa-brands fa-github',
-                        link: 'mailto:yasdilofficial@gmail.com'
+                        link: 'https://github.com/adilasomaaa'
                     },
                     {
                         name:'LinkedIn',

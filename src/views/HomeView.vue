@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class=" flex flex-col justify-center bg-gray-100" :class="pageActive != 3 ? 'sm:max-h-screen' : ''">
+    <div class=" flex flex-col justify-center bg-gray-100" :class="pageActive == 0 ? 'sm:max-h-screen md:max-h-screen lg:max-h-screen' : ''">
       <Navbar :active="pageActive" @add="(i) => pageActive = i" />
 
       <template v-if="pageActive == 0">
@@ -49,6 +49,15 @@ export default {
       datahilang:null
     }
   },
+  mounted() {
+    this.$nextTick(() => {
+      window.scroll({
+        top: document.body.scrollHeight, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+    });
+  },
   methods: {
     nextPage() {
       this.pageActive++
@@ -66,7 +75,7 @@ export default {
         left: 0, 
         behavior: 'smooth'
       });
-    }
+    },
   }
 }
 </script>

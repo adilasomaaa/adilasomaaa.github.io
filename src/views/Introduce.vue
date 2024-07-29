@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col justify-center items-center sm:h-screen md:h-auto">
-      <div class="w-fit sm:px-[10rem] px-5">
-        <div class="grid sm:grid-cols-4 grid-cols-1 md:grid-cols-1 gap-5 ">
+    <div class="block ">
+      <div class="w-fit sm:px-[5rem] md:px-[5rem] lg:px-[10rem] px-5 py-5">
+        <div class="grid sm:grid-cols-4 lg:grid-cols-4 md:grid-cols-1 grid-cols-1 gap-5 ">
             <div class="profil flex flex-col justify-center">
                 <img src="/profil2.png" width="100%" alt="" data-aos="fade-right" data-aos-duration="1500">
                 <div class=" flex justify-center" data-aos="fade-up" data-aos-duration="1500">
@@ -15,7 +15,7 @@
                 <div class="bagian-atas grid sm:grid-cols-3 gap-7">
                     <div class="introduce sm:col-span-2">
                         <h3 class="font-bold text-3xl uppercase mb-2">Hello</h3>
-                        <p class="text-justify sm:text-3xl text-xl main" v-html="profil.desc"></p>
+                        <p class="text-justify sm:text-xl md:text-xl lg:text-xl text-xl main" v-html="profil.desc"></p>
                     </div>
                     <div class="education sm:col-span-1 grid sm:grid-flow-row auto-rows-max gap-4">
                         <div class="inline">
